@@ -8,7 +8,7 @@ var myText=document.getElementById('input-text');
 myText.addEventListener('keydown',addelement);
 var list=document.getElementById('list-items');
 function addelement(event){
-    if(event.key === 'Enter' && !(myText.value==='') ){
+    if(event.key === 'Enter' && !(myText.value.trim()==='') ){
         var it=new items(myText.value,'items');
         var div=document.createElement('div');
         div.className='lists'
